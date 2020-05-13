@@ -1,5 +1,9 @@
 #### Give Sudo previleges to the user.
-'''sudo useradd -s /bin/bash -d /opt/stack -m stack '''
-''' $ echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
-$ sudo su - stack'''
+```
+sudo useradd -s /bin/bash -d /opt/stack -m <username> 
+```
+```
+$ echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/<username>
+$ sudo su - <username>
+```
 
