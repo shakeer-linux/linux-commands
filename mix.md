@@ -5,6 +5,15 @@ sudo useradd -s /bin/bash -d /opt/stack -m <username>
 ```
 $ echo "<username> ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/<username>
 $ sudo su - <username>
+
+root@ubuntu:~# echo "ubuntu ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/ubuntu
+ubuntu ALL=(ALL) NOPASSWD: ALL
+root@ubuntu:~#
+
+root@ubuntu:~# cat /etc/sudoers.d/ubuntu
+ubuntu ALL=(ALL) NOPASSWD: ALL
+root@ubuntu:~#
+
 ```
 
 
